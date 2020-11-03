@@ -18,7 +18,6 @@ public class GameBehavior : MonoBehaviour, IManager
     }
 
 
-
     public string labelText = "Collect all 4 items to win.";
     public int maxItems = 4;
 
@@ -124,29 +123,11 @@ public class GameBehavior : MonoBehaviour, IManager
         if(showWinScreen)
         {
             WinLossButton("You Won!");
-
-            // Utilities.RestartLevel(); //Line 157
         }
 
         if (showLossScreen)
         {
             WinLossButton("You Lossed...");
-
-
-            // try
-            // {
-            //     Utilities.RestartLevel(-1);
-            //     debug("Level restarted successfully...");
-            // }
-            // catch(System.ArgumentException e)
-            // {
-            //     Utilities.RestartLevel(0);
-            //     debug("Reverting scene to 0: " + e.ToString());
-            // }
-            // finally
-            // {
-            //     debug("Restart handled...");
-            // }
         }
     }
 
